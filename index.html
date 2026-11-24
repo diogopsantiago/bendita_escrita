@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bendita Escrita — Palavras que ganham forma. Afeto que se leva por aí.</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Estilos da Aplicação -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= Header ================= -->
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo">
+        <h1>Bendita Escrita</h1>
+        <span>Afeto que se leva por aí</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#inicio" class="active">Início</a></li>
+          <li><a href="#produtos">Nossa Loja</a></li>
+          <li><a href="#historia">Nossa História</a></li>
+          <li><a href="#produtos" class="nav-cta">Comprar pelo WhatsApp</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= Hero Section ================= -->
+  <section id="inicio" class="hero">
+    <img src="imagens/11_inspiracao_serra_da_mantiqueira_caminho.png" alt="Serra da Mantiqueira e Caminho da Fé" class="hero-bg">
+    <div class="hero-content">
+      <span class="hero-badge">Feito com Afeto em Paraisópolis - MG</span>
+      <h2>Palavras que ganham forma.<br>Afeto que se leva por aí.</h2>
+      <p>Presentes e produtos personalizados que guardam histórias, despertam lembranças e transformam momentos especiais.</p>
+      <a href="#produtos" class="btn">Conheça Nossos Produtos</a>
+    </div>
+  </section>
+
+  <!-- ================= Products Section ================= -->
+  <section id="produtos">
+    <div class="section-header">
+      <span>Nossa Coleção</span>
+      <h2>Produtos com Alma e Significado</h2>
+      <p>Escolha sua peça favorita e faça seu pedido de forma rápida e humanizada diretamente pelo nosso WhatsApp.</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Todos os Produtos</button>
+      <button class="filter-btn" data-filter="ecobags">Ecobags</button>
+      <button class="filter-btn" data-filter="canecas">Canecas</button>
+    </div>
+
+    <div id="products-grid" class="products-grid">
+      <!-- Produtos injetados dinamicamente via app.js -->
+    </div>
+  </section>
+
+  <!-- ================= Story Section ================= -->
+  <section id="historia" class="story-section">
+    <div class="story-container">
+      <img src="imagens/12_inspiracao_escrita_caderno_cafe.png" alt="Escrita e café na Serra da Mantiqueira" class="story-img">
+      <div class="story-text">
+        <span>Nossa Origem</span>
+        <h2>Amizade, Fé e Inspiração nas Montanhas</h2>
+        <p>Algumas histórias começam com uma ideia. Outras começam com uma amizade. A nossa tem um pouco dos dois. Somos <strong>Dri e Gi</strong>, amigas há quase três décadas, unidas por tantos caminhos, histórias e afetos.</p>
+        <p>Moramos em <strong>Paraisópolis</strong>, um pedacinho de paraíso literalmente fincado na <strong>Serra da Mantiqueira</strong>, entre as montanhas mineiras. Um lugar de natureza, simplicidade e encontros que nos ensinam diariamente.</p>
+        <div class="story-quote">
+          "Acreditamos que uma palavra pode ficar, uma lembrança pode aquecer o coração e um simples objeto pode carregar muito mais do que imaginamos."
+        </div>
+        <p>Foi desse universo de fé, caminhadas no Caminho da Fé e carinho que nasceu a Bendita Escrita. Queremos transformar palavras em objetos que acompanhem a sua vida.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Product Details Modal ================= -->
+  <div id="product-modal" class="modal-overlay">
+    <div class="modal-container">
+      <button id="modal-close" class="modal-close">&times;</button>
+      <img id="modal-img" src="" alt="Produto" class="modal-img">
+      <div class="modal-content">
+        <h3 id="modal-title" class="modal-title"></h3>
+        <div id="modal-price" class="modal-price"></div>
+        <p id="modal-desc" class="modal-desc"></p>
+        <button id="modal-buy-btn" class="modal-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> Quero comprar pelo WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Floating WhatsApp ================= -->
+  <a href="https://wa.me/5535999999999?text=Olá!%20Vim%20pelo%20site%20da%20Bendita%20Escrita%20e%20gostaria%20de%20saber%20mais%20informações." class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ================= Footer ================= -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>Bendita Escrita</h2>
+        <p>Palavras que ganham forma. Afeto que se leva por aí.</p>
+      </div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/benditaescrita" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/5535999999999" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; 2026 Bendita Escrita. Todos os direitos reservados. Paraisópolis - MG • Serra da Mantiqueira.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= App Script ================= -->
+  <script src="app.js"></script>
+</body>
+</html>
